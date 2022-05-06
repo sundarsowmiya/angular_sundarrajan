@@ -1,0 +1,74 @@
+<nz-page-header class="site-page-header" nzBackIcon nzTitle="Profile" nzSubtitle="This is a subtitle"></nz-page-header>
+<nz-card nzType="inner" nzTitle="User Information">
+
+  <form nz-form>
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">First Name</nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="Input is required">
+        <input nz-input [ngModel]="userInfo.name" name="required" required />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">Last name</nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12" >
+        <input nz-input [ngModel]="userInfo.username" name="username" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">Email</nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12" nzErrorTip="Email is not valid">
+        <input nz-input [ngModel]="userInfo.email" name="email" email />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">phone</nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12">
+        <input nz-input [ngModel]="userInfo.phone" name="phone" />
+      </nz-form-control>
+    </nz-form-item>
+
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">website</nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12">
+        <input nz-input [ngModel]="userInfo.website" name="website" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">company name</nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12">
+        <input nz-input [ngModel]="userInfo.company.name" name="company" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">company </nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12">
+        <input nz-input [ngModel]="userInfo.company.catchPhrase" name="catchPhrase" />
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">Address</nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12">
+        <input nz-input [ngModel]="userInfo.address.street" name="street" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">city</nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12">
+        <input nz-input [ngModel]="userInfo.address.city" name="city" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSpan]="3">zipcode</nz-form-label>
+      <nz-form-control nzHasFeedback [nzSpan]="12">
+        <input nz-input [ngModel]="userInfo.address.zipcode" name="zipcode" />
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+</nz-card>
